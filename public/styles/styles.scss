@@ -407,7 +407,8 @@ section{
         }
 
         .btn-con{
-            padding-bottom: 2rem;
+            padding-bottom: 3rem;
+            padding-top: 2rem;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -488,6 +489,7 @@ section{
                 padding-left: 1rem !important;
                 padding-right: 1rem !important;
                 border-top: 1px solid var(--color-secondary);
+                border-bottom: 1px solid var(--color-secondary);
                 .right-con{
                     margin-top: 2rem;
                 }
@@ -521,8 +523,10 @@ section{
                 padding-left: 1rem !important;
                 padding-right: 1rem !important;
                 border-top: 1px solid var(--color-secondary);
+                border-bottom: 1px solid var(--color-secondary);
                 .right-con{
                     margin-top: 2rem;
+                    margin-bottom: 2rem;
                     .logoBoard{
                         grid-template-columns: repeat(4, 1fr) !important;
                         .placeholder{
@@ -560,8 +564,10 @@ section{
                 padding-left: 1rem !important;
                 padding-right: 1rem !important;
                 border-top: 1px solid var(--color-secondary);
+                border-bottom: 1px solid var(--color-secondary);
                 .right-con{
                     margin-top: 2rem;
+                    margin-bottom: 2rem;
                     .logoBoard{
                         grid-template-columns: repeat(4, 1fr) !important;
                         .placeholder{
@@ -599,8 +605,10 @@ section{
                 padding-left: 1rem !important;
                 padding-right: 1rem !important;
                 border-top: 1px solid var(--color-secondary);
+                border-bottom: 1px solid var(--color-secondary);
                 .right-con{
                     margin-top: 2rem;
+                    margin-bottom: 2rem;
                     .logoBoard{
                         grid-template-columns: repeat(4, 1fr) !important;
                         .placeholder{
@@ -642,8 +650,10 @@ section{
                 padding-left: 1rem !important;
                 padding-right: 1rem !important;
                 border-top: 1px solid var(--color-secondary);
+                border-bottom: 1px solid var(--color-secondary);
                 .right-con{
                     margin-top: 2rem;
+                    margin-bottom: 2rem;
                     .logoBoard{
                         grid-template-columns: repeat(3, 1fr) !important;
                         .placeholder{
