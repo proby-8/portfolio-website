@@ -553,6 +553,7 @@ section {
   .sec1 .header-content .right-header {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
+    border-top: 1px solid var(--color-secondary);
   }
   .sec1 .header-content .right-header .right-con {
     margin-top: 2rem;
