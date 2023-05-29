@@ -786,6 +786,45 @@ section{
     }
 }
 
+@media screen and (max-width: 1350px) and (min-width: 931px) {
+    .projects .grid-display-board{
+        grid-template-columns:repeat(2, 1fr) !important; 
+    }
+    .projects .sub-title h4{
+        padding-right: 0rem !important;
+        padding-left: 0rem !important;
+    }
+}
+
+@media screen and (max-width: 930px) and (min-width: 516px) {
+    .sec4{
+        .sub-title{
+            h4{
+                padding-right: 0rem !important;
+                padding-left: 0rem !important;
+            }
+        }
+        .grid-display-board{
+            grid-template-columns:repeat(1, 1fr) !important; 
+            padding-left: 0rem !important;
+            padding-right: 0rem !important;
+
+            a{
+                width: 100% !important;
+
+                .project{
+                    .project-languages{
+                        grid-template-columns: repeat(2, 1fr) !important;
+                    }
+                    .project-description {
+                        font-size: 1rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 515px) and (min-width: 0px) {
     .sec4{
         .main-title{
@@ -796,39 +835,27 @@ section{
         .sub-title{
             h4{
                 font-size: 5vw !important;
+                padding-right: 0rem !important;
+                padding-left: 0rem !important;
             }
         }
-        .grid-display-board a .project .project-description {
-            font-size: 1rem !important;
-        }
-    }
-}
+        .grid-display-board{
+            grid-template-columns:repeat(1, 1fr) !important; 
+            padding-left: 0rem !important;
+            padding-right: 0rem !important;
 
-@media screen and (max-width: 1350px) and (min-width: 930px) {
-    .projects .grid-display-board{
-        grid-template-columns:repeat(2, 1fr) !important; 
-    }
-    .projects .sub-title h4{
-        padding-right: 0rem !important;
-        padding-left: 0rem !important;
-    }
-}
-@media screen and (max-width: 930px) and (min-width: 300px) {
-    .projects .grid-display-board{
-        grid-template-columns:repeat(1, 1fr) !important; 
-        padding-left: 0rem !important;
-        padding-right: 0rem !important;
-        a{
-            width: 100% !important;
-        }
-        .project{
-            .project-languages{
-                grid-template-columns: repeat(2, 1fr) !important;
+            a{
+                width: 100% !important;
+
+                .project{
+                    .project-languages{
+                        grid-template-columns: repeat(2, 1fr) !important;
+                    }
+                    .project-description {
+                        font-size: 1rem !important;
+                    }
+                }
             }
         }
-    }
-    .projects .sub-title h4{
-        padding-right: 0rem !important;
-        padding-left: 0rem !important;
     }
 }
