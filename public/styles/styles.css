@@ -120,11 +120,11 @@ section {
     transform: translateY(0) scaleY(1);
   }
 }
+.active.navOpen.sec1 {
+  padding-top: 11rem !important;
+}
 .active.navOpen {
   padding-top: 16rem;
-}
-.active.navOpen .container {
-  padding-top: 1rem !important;
 }
 
 .controls {

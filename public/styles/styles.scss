@@ -124,11 +124,11 @@ section{
             transform: translateY(0) scaleY(1);
         }
     }
+    &.navOpen.sec1{
+        padding-top: 11rem !important;
+    }
     &.navOpen{
         padding-top: 16rem;
-        .container{
-            padding-top: 1rem !important;
-        } 
     }
 }
 
