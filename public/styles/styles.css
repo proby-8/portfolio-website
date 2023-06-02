@@ -120,6 +120,12 @@ section {
     transform: translateY(0) scaleY(1);
   }
 }
+.active.navOpen {
+  padding-top: 16rem;
+}
+.active.navOpen .container {
+  padding-top: 1rem !important;
+}
 
 .controls {
   position: absolute;
@@ -246,11 +252,11 @@ section {
   z-index: 14;
   display: none;
   transform: translateX(50%);
-  position: fixed;
+  position: absolute;
   top: 0rem;
   padding-top: 5rem;
-  padding-right: 5rem;
-  padding-left: 5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   padding-bottom: 1rem;
   right: 50%;
   -moz-column-gap: 2rem;
@@ -281,6 +287,7 @@ section {
   text-align: center;
   white-space: nowrap;
   font-size: 1.5rem;
+  width: 100%;
 }
 
 .sec1 .container {

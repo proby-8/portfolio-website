@@ -60,12 +60,14 @@ var intervalId = window.setInterval(function(){
 
 function navBar(){
     document.getElementById("nav-btn").addEventListener("click", function() {
+        document.querySelector(".active").classList.toggle("navOpen");
         document.getElementById("realMenu").classList.toggle("nowActive");
     })
 }
 function navBtns() {
     [...document.querySelectorAll(".option")].forEach(button => {
         button.addEventListener("click", function() {
+            document.querySelector(".active").classList.toggle("navOpen");
             document.querySelector(".active").classList.remove("active");
             document.getElementById(button.dataset.id).classList.add("active");
             document.getElementById("realMenu").classList.toggle("nowActive");
