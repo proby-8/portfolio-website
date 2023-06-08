@@ -1,9 +1,10 @@
 // variables for quotes
 const quotes = ["I am a <span>Computer Scientist</span> 💻.",
                 "I am a <span>Software Developer</span> 🎨.",
-                "Work with <span>Artificial Intelligence</span> 🤖.",
-                "Work with <span>Data Analytics</span> 🔍."];
-var currentQuote = 1;
+                "I work with <span>Artificial Intelligence</span> 🤖.",
+                "I work with <span>Data Analysis</span> 🔍.",
+                "I am a <span>Full-Stack Web Developer</span> 🌐."];
+var currentQuote = 4;
 
 
 // function for main buttons
