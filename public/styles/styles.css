@@ -167,6 +167,10 @@ section {
   color: var(--color-white) !important;
 }
 
+.downloadResumeBtn {
+  display: none;
+}
+
 .toggle {
   position: absolute;
   z-index: 10;
