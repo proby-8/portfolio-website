@@ -57,6 +57,8 @@ function navBar(){
     document.getElementById("nav-btn").addEventListener("click", function() {
         document.querySelector(".active").classList.toggle("navOpen");
         document.getElementById("realMenu").classList.toggle("nowActive");
+        document.getElementById("switcher").classList.toggle("hide");
+        document.getElementById("navDownload").classList.toggle("hide");
     })
 }
 navBar();
