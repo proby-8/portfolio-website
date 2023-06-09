@@ -32,7 +32,7 @@
   --color-white: #000;
   --color-black: #FFFFFF;
   --project-back-grey: #c1c2c7;
-  --color-grey-2: #2a2e35;
+  --color-grey-3: #2a2e35;
 }
 
 body {
@@ -135,19 +135,11 @@ a {
   font-size: 1.5rem;
   color: var(--color-grey-2);
   pointer-events: none;
+  transform: translateY(2px);
 }
 .backHome:hover {
   transform: scale(1.1);
   border: 1px solid var(--color-secondary);
-}
-.backHome.day .moon {
-  display: none;
-}
-.backHome.night .sun {
-  display: none;
-}
-.backHome .moon {
-  padding-top: 0.15rem;
 }
 
 .main {
@@ -155,7 +147,7 @@ a {
   row-gap: 3rem;
 }
 .main h1 {
-  padding-top: 1%;
+  padding-top: 2rem;
   width: 100%;
   text-align: center;
 }
@@ -176,5 +168,5 @@ a {
 .main .container .gridBoard .element {
   height: 65px;
   width: 65px;
-  border: 0.5px solid var(--color-grey-2);
+  border: 0.5px solid var(--color-grey-3);
 }/*# sourceMappingURL=wordleStyles.css.map */
