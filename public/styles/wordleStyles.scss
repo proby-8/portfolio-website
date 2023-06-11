@@ -176,6 +176,14 @@ a{
                 height: 65px;
                 width: 65px;
                 border: .5px solid var(--color-grey-3);
+                background: transparent;
+                font-size: 45px;
+                color: var(--color-white);
+                text-align: center;
+                font-weight: bold;
+                text-transform: uppercase;
+                caret-color: transparent;
+
             }
         }
     }
