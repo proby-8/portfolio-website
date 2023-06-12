@@ -54,6 +54,7 @@ function input() {
                         attempt += document.getElementById(id++).value;
                     }
                     console.log("Attempted answer = " + attempt);
+                    alert("Attempted answer = " + attempt);
 
                     if (attempt.length > 4 && words.includes(attempt)) {
                         // real word
