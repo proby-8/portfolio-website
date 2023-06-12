@@ -176,4 +176,55 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   caret-color: transparent;
+}
+.main .container .gridBoard .element:focus {
+  outline: 0.5px solid var(--color-white);
+}
+.main .container .gridBoard .element.green {
+  animation: guess 1s;
+  background-color: rgb(16, 95, 16);
+}
+.main .container .gridBoard .element.yellow {
+  animation: guess 1s;
+  background-color: rgb(153, 153, 32);
+}
+.main .container .gridBoard .element.grey {
+  animation: guess 1s;
+  background-color: grey;
+}
+@keyframes guess {
+  0% {
+    scale: 1;
+  }
+  40% {
+    scale: 1.1;
+  }
+  60% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.main .container .gridBoard .element.wrong {
+  outline: none;
+  animation: wrong 1s;
+}
+@keyframes wrong {
+  0% {
+    border-color: var(var(--color-grey-3));
+    transform: 0;
+  }
+  25% {
+    border-color: red;
+    transform: translateY(-0.5vh);
+  }
+  75% {
+    border-color: red;
+    transform: translateY(-0.5vh);
+  }
+  100% {
+    border-color: var(var(--color-grey-3));
+    transform: 0;
+  }
 }/*# sourceMappingURL=wordleStyles.css.map */
