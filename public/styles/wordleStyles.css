@@ -233,5 +233,6 @@ a {
   .main .container .gridBoard .element {
     width: 50px !important;
     height: 50px !important;
+    font-size: 35px !important;
   }
 }/*# sourceMappingURL=wordleStyles.css.map */
