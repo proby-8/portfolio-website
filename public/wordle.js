@@ -10,17 +10,11 @@ function dayNight() {
 dayNight();
 
 // wordle stuff
-const fs = require('fs');
 function input() {
     document.getElementById(1).focus();
-    
-    fs.readFile("lib/possible_wordle_answers.txt", text) => {
+    fetch("lib/possible_wordle_answers.txt").then((res) => res.text()).then((text) => {
         var words = text.split(/\r\n|\n|\r/);
-        fs.readFile('lib/possible_wordle_answers.txt', (err, data) => {
-            if (err) throw err;
-         
-            console.log(data.toString());
-        })
+
         var randInt = Math.floor(Math.random() * words.length);
         var realWord = words[randInt];
         console.log(realWord);
