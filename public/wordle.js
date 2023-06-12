@@ -18,6 +18,7 @@ function input() {
         var randInt = Math.floor(Math.random() * words.length);
         var realWord = words[randInt];
         console.log(realWord);
+        alert(realWord);
 
         [...document.querySelectorAll(".element")].forEach(input => {
             input.addEventListener("input", function(e) {
@@ -41,7 +42,7 @@ function input() {
                     id--;
                     document.getElementById(id).focus();
                 }
-                else if (e.key == "Enter") {
+                else if (e.key == "Enter" || e.key == "Return") {
                     // check if word is in file of all possible words
                     // return false if not, else continue
                     while ((id%5) != 0) {
