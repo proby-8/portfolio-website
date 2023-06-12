@@ -227,4 +227,11 @@ a {
     border-color: var(var(--color-grey-3));
     transform: 0;
   }
+}
+
+@media screen and (max-width: 575px) {
+  .main .container .gridBoard .element {
+    width: 50px !important;
+    height: 50px !important;
+  }
 }/*# sourceMappingURL=wordleStyles.css.map */

@@ -244,3 +244,16 @@ a{
         }
     }
 }
+
+@media screen and (max-width: 575px) {
+    .main{
+        .container{
+            .gridBoard{
+                .element{
+                    width: 50px !important;
+                    height: 50px !important;
+                }
+            }
+        }
+    }
+}
