@@ -18,7 +18,6 @@ function input() {
         var randInt = Math.floor(Math.random() * words.length);
         var realWord = words[randInt];
         console.log(realWord);
-        alert(realWord);
 
         [...document.querySelectorAll(".element")].forEach(input => {
             input.addEventListener("input", function(e) {
@@ -54,8 +53,6 @@ function input() {
                     for (var i=0; i<5; i++) {
                         attempt += document.getElementById(id++).value;
                     }
-                    console.log("Attempted answer = " + attempt);
-                    alert("Attempted answer = " + attempt);
 
                     if (attempt.length > 4 && words.includes(attempt)) {
                         // real word
@@ -64,15 +61,12 @@ function input() {
                             var curId = (parseInt(ogid) + parseInt(i) - 4);
 
                             if (attempt[i] == realWord[i]) {
-                                console.log("green");
                                 document.getElementById(curId).classList.add("green");
                             }
                             else if (realWord.includes(attempt[i])) {
-                                console.log("yellow");
                                 document.getElementById(curId).classList.add("yellow");
                             }
                             else {
-                                console.log("grey");
                                 document.getElementById(curId).classList.add("grey");
                             }
                         }
@@ -84,10 +78,10 @@ function input() {
                             document.getElementById(oldId++).disabled = true;
                         }
                         if (newId > 51) {
-                            console.log("Game Over");
+                            console.log("You Lost!");
                         }
                         if (attempt == realWord) {
-                            console.log("Game over");
+                            console.log("You Won!");
                         }
                         else{
                             for (var i=0; i<5; i++) {

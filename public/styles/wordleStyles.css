@@ -155,6 +155,7 @@ a {
   position: relative;
   display: grid;
   margin: auto;
+  row-gap: 1.5rem;
 }
 .main .container .gridBoard {
   display: grid;
@@ -228,11 +229,66 @@ a {
     transform: 0;
   }
 }
+.main .keyBoard {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 0.25rem;
+}
+.main .keyBoard .top-row {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  -moz-column-gap: 0.1rem;
+       column-gap: 0.1rem;
+}
+.main .keyBoard .top-row button {
+  width: 50px !important;
+  height: 60px;
+}
+.main .keyBoard .middle-row {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  -moz-column-gap: 0.1rem;
+       column-gap: 0.1rem;
+}
+.main .keyBoard .middle-row button {
+  width: 50px !important;
+  height: 60px;
+}
+.main .keyBoard .bottom-row {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+.main .keyBoard .bottom-row button {
+  width: 50px !important;
+  height: 60px;
+}
+.main .keyBoard .bottom-row .big {
+  scale: 1.5;
+}
 
 @media screen and (max-width: 575px) {
+  .main {
+    row-gap: 1.5rem;
+  }
   .main .container .gridBoard .element {
     width: 50px !important;
     height: 50px !important;
     font-size: 35px !important;
+  }
+  .main .keyBoard .top-row button {
+    width: 30px !important;
+  }
+  .main .keyBoard .middle-row button {
+    width: 30px !important;
+  }
+  .main .keyBoard .bottom-row button {
+    width: 30px !important;
+  }
+  .main .keyBoard .bottom-row .big {
+    scale: 1.2;
   }
 }/*# sourceMappingURL=wordleStyles.css.map */

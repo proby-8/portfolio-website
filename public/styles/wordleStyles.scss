@@ -164,6 +164,8 @@ a{
         display: grid;
         margin: auto;
 
+        row-gap: 1.5rem;
+
         .gridBoard{
             display: grid;
             grid-template-columns: repeat(5, 1fr);
@@ -242,17 +244,87 @@ a{
                 }
             }
         }
+
     }
+
+    .keyBoard{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: .25rem;
+        .top-row{
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            column-gap: .1rem;
+
+            button{
+                width: 50px !important;
+                height: 60px;
+            }
+        }
+
+        .middle-row{
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            column-gap: .1rem;
+
+            button{
+                width: 50px !important;
+                height: 60px;
+            }
+        }
+
+        .bottom-row{
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            // column-gap: .1rem;
+
+            button{
+                width: 50px !important;
+                height: 60px;
+            }
+            
+            .big{
+                scale: 1.5;
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 575px) {
     .main{
+        row-gap: 1.5rem;
         .container{
             .gridBoard{
                 .element{
                     width: 50px !important;
                     height: 50px !important;
                     font-size: 35px !important;
+                }
+            }
+        }
+
+        .keyBoard{
+            .top-row{
+                button{
+                    width: 30px !important;
+                }
+            }
+            .middle-row{
+                button{
+                    width: 30px !important;
+                }
+            }
+            .bottom-row{
+                button{
+                    width: 30px !important;
+                }
+                .big{
+                    scale: 1.2;
                 }
             }
         }
