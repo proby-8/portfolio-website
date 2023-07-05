@@ -247,6 +247,32 @@ a {
   height: 60px;
   cursor: pointer;
 }
+.main .keyBoard .top-row button.green {
+  animation: guess 1s;
+  background-color: rgb(16, 95, 16);
+}
+.main .keyBoard .top-row button.yellow {
+  animation: guess 1s;
+  background-color: rgb(153, 153, 32);
+}
+.main .keyBoard .top-row button.grey {
+  animation: guess 1s;
+  background-color: grey;
+}
+@keyframes guess {
+  0% {
+    scale: 1;
+  }
+  40% {
+    scale: 1.1;
+  }
+  60% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
 .main .keyBoard .middle-row {
   margin: auto;
   display: grid;
@@ -259,6 +285,32 @@ a {
   height: 60px;
   cursor: pointer;
 }
+.main .keyBoard .middle-row button.green {
+  animation: guess 1s;
+  background-color: rgb(16, 95, 16);
+}
+.main .keyBoard .middle-row button.yellow {
+  animation: guess 1s;
+  background-color: rgb(153, 153, 32);
+}
+.main .keyBoard .middle-row button.grey {
+  animation: guess 1s;
+  background-color: grey;
+}
+@keyframes guess {
+  0% {
+    scale: 1;
+  }
+  40% {
+    scale: 1.1;
+  }
+  60% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
 .main .keyBoard .bottom-row {
   margin: auto;
   display: grid;
@@ -270,6 +322,32 @@ a {
   width: 50px !important;
   height: 60px;
   cursor: pointer;
+}
+.main .keyBoard .bottom-row button.green {
+  animation: guess 1s;
+  background-color: rgb(16, 95, 16);
+}
+.main .keyBoard .bottom-row button.yellow {
+  animation: guess 1s;
+  background-color: rgb(153, 153, 32);
+}
+.main .keyBoard .bottom-row button.grey {
+  animation: guess 1s;
+  background-color: grey;
+}
+@keyframes guess {
+  0% {
+    scale: 1;
+  }
+  40% {
+    scale: 1.1;
+  }
+  60% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
 }
 .main .keyBoard .bottom-row .enter {
   transform: scaleX(150%) translateX(-16%);

@@ -262,6 +262,33 @@ a{
                 width: 50px !important;
                 height: 60px;
                 cursor: pointer;
+
+                &.green{
+                    animation: guess 1s;
+                    background-color: rgb(16, 95, 16);
+                }
+                &.yellow{
+                    animation: guess 1s;
+                    background-color: rgb(153, 153, 32);
+                }
+                &.grey{
+                    animation: guess 1s;
+                    background-color: grey;
+                }
+                @keyframes guess {
+                    0%{
+                        scale: 1;
+                    }
+                    40%{
+                        scale: 1.1;
+                    }
+                    60%{
+                        scale: 1.1;
+                    }
+                    100%{
+                        scale: 1;
+                    }
+                }
             }
         }
 
@@ -275,6 +302,33 @@ a{
                 width: 50px !important;
                 height: 60px;
                 cursor: pointer;
+
+                &.green{
+                    animation: guess 1s;
+                    background-color: rgb(16, 95, 16);
+                }
+                &.yellow{
+                    animation: guess 1s;
+                    background-color: rgb(153, 153, 32);
+                }
+                &.grey{
+                    animation: guess 1s;
+                    background-color: grey;
+                }
+                @keyframes guess {
+                    0%{
+                        scale: 1;
+                    }
+                    40%{
+                        scale: 1.1;
+                    }
+                    60%{
+                        scale: 1.1;
+                    }
+                    100%{
+                        scale: 1;
+                    }
+                }
             }
         }
 
@@ -288,6 +342,33 @@ a{
                 width: 50px !important;
                 height: 60px;
                 cursor: pointer;
+
+                &.green{
+                    animation: guess 1s;
+                    background-color: rgb(16, 95, 16);
+                }
+                &.yellow{
+                    animation: guess 1s;
+                    background-color: rgb(153, 153, 32);
+                }
+                &.grey{
+                    animation: guess 1s;
+                    background-color: grey;
+                }
+                @keyframes guess {
+                    0%{
+                        scale: 1;
+                    }
+                    40%{
+                        scale: 1.1;
+                    }
+                    60%{
+                        scale: 1.1;
+                    }
+                    100%{
+                        scale: 1;
+                    }
+                }
             }
             
             .enter{
