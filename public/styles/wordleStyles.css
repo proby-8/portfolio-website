@@ -245,6 +245,7 @@ a {
 .main .keyBoard .top-row button {
   width: 50px !important;
   height: 60px;
+  cursor: pointer;
 }
 .main .keyBoard .middle-row {
   margin: auto;
@@ -256,18 +257,31 @@ a {
 .main .keyBoard .middle-row button {
   width: 50px !important;
   height: 60px;
+  cursor: pointer;
 }
 .main .keyBoard .bottom-row {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
+  -moz-column-gap: 0.1rem;
+       column-gap: 0.1rem;
 }
 .main .keyBoard .bottom-row button {
   width: 50px !important;
   height: 60px;
+  cursor: pointer;
 }
-.main .keyBoard .bottom-row .big {
-  scale: 1.5;
+.main .keyBoard .bottom-row .enter {
+  transform: scaleX(150%) translateX(-16%);
+}
+.main .keyBoard .bottom-row .enter i {
+  transform: scaleX(150%) scaleY(150%) !important;
+}
+.main .keyBoard .bottom-row .delete {
+  transform: scaleX(150%) translateX(16%);
+}
+.main .keyBoard .bottom-row .delete i {
+  transform: scaleX(150%) scaleY(150%) !important;
 }
 
 @media screen and (max-width: 575px) {
