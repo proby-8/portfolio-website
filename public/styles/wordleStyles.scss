@@ -391,6 +391,11 @@ a{
 @media screen and (max-width: 575px) {
     .main{
         row-gap: 1.5rem;
+        h1{
+            padding-top: 1rem;
+            width: 100%;
+            text-align: center;
+        }
         .container{
             .gridBoard{
                 .element{
@@ -404,20 +409,20 @@ a{
         .keyBoard{
             .top-row{
                 button{
-                    width: 30px !important;
+                    width: 33px !important;
                 }
             }
             .middle-row{
                 button{
-                    width: 30px !important;
+                    width: 33px !important;
                 }
             }
             .bottom-row{
                 button{
-                    width: 30px !important;
+                    width: 33px !important;
                 }
                 .big{
-                    scale: 1.2;
+                    scale: 120%;
                 }
             }
         }
