@@ -367,9 +367,10 @@ a {
     row-gap: 1.5rem;
   }
   .main h1 {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     width: 100%;
     text-align: center;
+    font-size: 1.8rem;
   }
   .main .container .gridBoard .element {
     width: 50px !important;
