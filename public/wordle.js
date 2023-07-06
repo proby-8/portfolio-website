@@ -290,3 +290,24 @@ function input() {
     })
 };
 input();
+
+
+function checkMobile() {
+    var windowWidth = window.screen.width < window.outerWidth ?
+                  window.screen.width : window.outerWidth;
+    var mobile = windowWidth < 500;
+    
+    if (mobile) {
+        allInputs = document.getElementsByClassName("element");
+        let i = 0;
+
+        while (i < allInputs.length) {
+            console.log(allInputs[i]);
+            allInputs[i].readOnly = true;
+            i++;
+        }
+
+        console.log("mobile mode");
+    }
+}
+checkMobile();
