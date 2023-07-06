@@ -363,6 +363,9 @@ a {
 }
 
 @media screen and (max-width: 575px) {
+  .header, .footer {
+    display: none;
+  }
   .main {
     row-gap: 1.5rem;
   }
