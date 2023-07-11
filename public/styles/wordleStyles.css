@@ -170,7 +170,6 @@ a {
   pointer-events: none;
 }
 .resetCon .reset:hover {
-  transform: scale(1.1);
   border: 1px solid var(--color-secondary);
 }
 .resetCon .reset:hover .text {
@@ -413,6 +412,30 @@ a {
 }
 .main .keyBoard .bottom-row .delete i {
   transform: scaleX(150%) scaleY(150%) !important;
+}
+
+.endGameMsgWon {
+  position: absolute;
+  right: 50%;
+  top: 35vh;
+  transform: translateX(50%) scale(1.75);
+  background-color: rgb(16, 95, 16);
+}
+.endGameMsgWon .con {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.endGameMsgLost {
+  position: absolute;
+  right: 50%;
+  top: 35vh;
+  transform: translateX(50%) scale(1.75);
+  background-color: rgb(168, 36, 36);
+}
+.endGameMsgLost .con {
+  margin: 0.5rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 575px) {

@@ -175,8 +175,7 @@ a{
             pointer-events: none;
         }
         &:hover{
-            transform: scale(1.1);
-            border: 1px solid var(--color-secondary);;
+            border: 1px solid var(--color-secondary);
             .text{
                 visibility: visible;
             }
@@ -203,7 +202,7 @@ a{
 }
 
 // main content
-.main{
+.main {
     display: grid;
     row-gap: 2rem;
     h1{
@@ -442,6 +441,32 @@ a{
 
 }
 
+// end game message
+.endGameMsgWon {
+    position: absolute;
+    right: 50%;
+    top: 35vh;
+    transform: translateX(50%) scale(1.75);
+    background-color: rgb(16, 95, 16);
+    .con {
+        margin: .5rem;
+        text-align: center;
+    }
+}
+
+.endGameMsgLost {
+    position: absolute;
+    right: 50%;
+    top: 35vh;
+    transform: translateX(50%) scale(1.75);
+    background-color: rgb(168, 36, 36);
+    .con {
+        margin: .5rem;
+        text-align: center;
+    }
+}
+
+// mobile
 @media screen and (max-width: 575px) {
 
     .header, .footer {display: none;}

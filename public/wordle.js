@@ -69,22 +69,34 @@ function input() {
                                 document.getElementById(oldId++).disabled = true;
                             }
                             if (newId > 51) {
-                                // disable keyboard
+                                // disable keyboard, user lost
                                 for (let i=0; i<26; i++){
                                     let tempId = String.fromCharCode(65 + i)
                                     document.getElementById(String(tempId)).disabled = true;
                                 }
                                 document.getElementById("enter").disabled = true;
                                 document.getElementById("delete").disabled = true;
+
+                                // display you lost, word is XXXXX
+                                document.getElementById("gameLost").innerText = 'You Lost! The word was "' + realWord.toUpperCase() + '"'; 
+                                document.getElementById("gameLost").style.display = "block";
+                                document.getElementById("gameBoard").style.opacity = "0.5";
+                                document.getElementById("resetGameBtn").style.scale = "1.5";
                             }
-                            if (attempt == realWord) {
-                                // disable keyboard
+                            else if (attempt == realWord) {
+                                // disable keyboard, user won
                                 for (let i=0; i<26; i++){
                                     let tempId = String.fromCharCode(65 + i)
                                     document.getElementById(String(tempId)).disabled = true;
                                 }
                                 document.getElementById("enter").disabled = true;
                                 document.getElementById("delete").disabled = true;
+
+                                // display you won, word is XXXXX
+                                document.getElementById("gameWon").innerText = 'You Won! The word was "' + realWord.toUpperCase() + '"'; 
+                                document.getElementById("gameWon").style.display = "block";
+                                document.getElementById("gameBoard").style.opacity = "0.5";
+                                document.getElementById("resetGameBtn").style.scale = "1.5";
                             }
                             else{
                                 for (var i=0; i<5; i++) {
@@ -238,22 +250,34 @@ function input() {
                                 document.getElementById(oldId++).disabled = true;
                             }
                             if (newId > 51) {
-                                // disable keyboard
+                                // disable keyboard, user lost
                                 for (let i=0; i<26; i++){
                                     let tempId = String.fromCharCode(65 + i)
                                     document.getElementById(String(tempId)).disabled = true;
                                 }
                                 document.getElementById("enter").disabled = true;
                                 document.getElementById("delete").disabled = true;
+
+                                // display you lost, word is XXXXX
+                                document.getElementById("gameLost").innerText = 'You Lost! The word was "' + realWord.toUpperCase() + '"'; 
+                                document.getElementById("gameLost").style.display = "block";
+                                document.getElementById("gameBoard").style.opacity = "0.5";
+                                document.getElementById("resetGameBtn").style.scale = "1.5";
                             }
-                            if (attempt == realWord) {
-                                // disable keyboard
+                            else if (attempt == realWord) {
+                                // disable keyboard, user won
                                 for (let i=0; i<26; i++){
                                     let tempId = String.fromCharCode(65 + i)
                                     document.getElementById(String(tempId)).disabled = true;
                                 }
                                 document.getElementById("enter").disabled = true;
                                 document.getElementById("delete").disabled = true;
+
+                                // display you won, word is XXXXX
+                                document.getElementById("gameWon").innerText = 'You Won! The word was "' + realWord.toUpperCase() + '"'; 
+                                document.getElementById("gameWon").style.display = "block";
+                                document.getElementById("gameBoard").style.opacity = "0.5";
+                                document.getElementById("resetGameBtn").style.scale = "1.5";
                             }
                             else{
                                 for (var i=0; i<5; i++) {
@@ -334,7 +358,6 @@ checkMobile();
 
 function resetBtn() {
     const resetButton = document.querySelector(".reset");
-    console.log(resetButton);
     resetButton.addEventListener("click", function(){
         location.reload();
     })
