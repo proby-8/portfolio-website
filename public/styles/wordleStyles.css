@@ -142,9 +142,61 @@ a {
   border: 1px solid var(--color-secondary);
 }
 
+.resetCon {
+  margin: auto;
+  height: 55px;
+}
+.resetCon .reset {
+  z-index: 1000;
+  margin: auto;
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--color-grey-4);
+  width: 55px;
+  height: 55px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0.7rem 0;
+  box-shadow: var(--box-shadow-1);
+}
+.resetCon .reset i {
+  font-size: 1.5rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+.resetCon .reset:hover {
+  transform: scale(1.1);
+  border: 1px solid var(--color-secondary);
+}
+.resetCon .reset:hover .text {
+  visibility: visible;
+}
+.resetCon .reset .text {
+  position: absolute;
+  visibility: hidden;
+  top: 0%;
+  right: 50%;
+  transform: translate(50%, -100%);
+  background-color: var(--color-grey-1);
+  color: black;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.1rem;
+  white-space: nowrap;
+}
+.resetCon .reset .text:hover {
+  visibility: visible;
+}
+
 .main {
   display: grid;
-  row-gap: 3rem;
+  row-gap: 2rem;
 }
 .main h1 {
   padding-top: 2rem;
@@ -156,6 +208,7 @@ a {
   display: grid;
   margin: auto;
   row-gap: 1.5rem;
+  padding-bottom: 1rem;
 }
 .main .container .gridBoard {
   display: grid;

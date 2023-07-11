@@ -314,7 +314,6 @@ function input() {
 };
 input();
 
-
 function checkMobile() {
     var windowWidth = window.screen.width < window.outerWidth ?
                   window.screen.width : window.outerWidth;
@@ -332,3 +331,12 @@ function checkMobile() {
     }
 }
 checkMobile();
+
+function resetBtn() {
+    const resetButton = document.querySelector(".reset");
+    console.log(resetButton);
+    resetButton.addEventListener("click", function(){
+        location.reload();
+    })
+}
+resetBtn();
