@@ -73,6 +73,13 @@ function input() {
                         }
                         if (attempt == realWord) {
                             console.log("You Won!");
+                            // disable keyboard
+                            for (let i=0; i<26; i++){
+                                let tempId = String.fromCharCode(65 + i)
+                                document.getElementById(String(tempId)).disabled = true;
+                            }
+                            document.getElementById("enter").disabled = true;
+                            document.getElementById("delete").disabled = true;
                         }
                         else{
                             for (var i=0; i<5; i++) {
@@ -231,6 +238,13 @@ function input() {
                         }
                         if (attempt == realWord) {
                             console.log("You Won!");
+                            // disable keyboard
+                            for (let i=0; i<26; i++){
+                                let tempId = String.fromCharCode(65 + i)
+                                document.getElementById(String(tempId)).disabled = true;
+                            }
+                            document.getElementById("enter").disabled = true;
+                            document.getElementById("delete").disabled = true;
                         }
                         else{
                             for (var i=0; i<5; i++) {
